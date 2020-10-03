@@ -1,4 +1,4 @@
-//higher order function.. it is a function that return a fucntion or accept a function....
+// //higher order function.. it is a function that return a fucntion or accept a function....
 
 // const ask = (name) =>
 // {
@@ -27,7 +27,7 @@
 //   let l_name,l_age=0,obj;
 //   const p = persons.filter(person => 
 //     {
-//         if(person.age > l_age)
+//        if (person.age > l_age) 
 //         {
 //             l_age=person.age;
 //             l_name=person.name;
@@ -37,7 +37,7 @@
 //   console.log(l_name +" " +l_age    );
 
 
-//Immediately Invoked Function Expressions (IIFE)
+// //Immediately Invoked Function Expressions (IIFE)
 
 // (function()
 //     {
@@ -45,7 +45,7 @@
 //             console.log(x);
 //     })();
 
-//rest operator
+// //rest operator
 
 // function numbers(a,b, ...c)
 // {
@@ -53,7 +53,7 @@
 // }
 // numbers(1,2,3,4,5,6,7,8,9);
 
-//spread operator
+// //spread operator
 
 // let arr1= [1,2,3,4,4,55,5,6,6,5,5,55,3453,34,34,34,34,343,5354,45,45,46,4];
 // let arr2=[0,0,0,0];
@@ -62,14 +62,14 @@
 // console.log(arr2);
 
 
-//destructring in array
+// //destructring in array
 
 // let arr=["ayush","Mishra"];
 // let [firstname, Lastname] = arr;
 // console.log(firstname + " "+ Lastname  );
 
 
-//destructing in object
+// //destructing in object
 
 // let car=
 // {
@@ -89,16 +89,18 @@
 // console.log(Model +" is " +Engine);
 
 
-//promise 
+// //promise 
 
 // function delay(timeout)
 // {
 //     let promise= new Promise ((resolve,reject) =>
 //     {       
 //             setTimeout(() => {
-//                resolv0e( console.log("Jai Baba ki"));
+//                resolve( console.log("Jai Baba ki"));
 //             }, timeout);
-//     }).then(a => {
+//     });
+
+//		promise.then(a => {
 //             console.log("ayush");
 //     }).catch(err =>
 //         console.log(err)
@@ -160,35 +162,4 @@
 // }
 // console.log(checker(a));
 
-
-let a= "ayushmishra";
-console.log(a.slice(-1));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
