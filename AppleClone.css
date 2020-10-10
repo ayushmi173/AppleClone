@@ -1,0 +1,71 @@
+ 
+ *
+ {
+     margin: 0px;
+     padding:0px;
+     box-sizing: border-box;
+     
+ }
+ #rednew
+{
+    color:red !important;
+}
+.paraheading
+{
+    font-size: 48px;
+    line-height: 1.08349;
+    font-weight: 600;
+    letter-spacing: -.003em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+.price
+{
+    font-size: 28px;
+    line-height: 1.14286;
+    font-weight: 600;
+    letter-spacing: .007em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.emi
+{
+    font-size: 17px;
+    line-height: 1.23536;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+.xolo
+{
+    line-height: 50px;
+}
+
+a:hover{
+text-decoration: none;
+}
+
+.alert
+{
+    background: linear-gradient( 90deg, rgb(235,113,123) 0%, rgb(234,113,123) 23%, rgb(236,153,116) 47%, rgb(239,187,118) 75%, rgb(242,199,119) 100%);  
+}
+.navbar
+{
+    background-color: black !important;
+    margin:0px !important;
+}
+ul > li> a{
+    color: white;
+}
+.btn
+{
+    border-radius: 30% !important;
+}
+.container
+{
+    margin-top:40px;
+    margin-bottom: 80px;
+}
+.row
+{
+    margin: 0px;
+}
