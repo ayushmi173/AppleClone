@@ -13,15 +13,15 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <style>
-       h6
-       {
-        color: brown;
-        text-align: center;
-       }
-       p{
-           text-align: center;
-           color:#1e7e34;
-       }
+        h6 {
+            color: brown;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            color: #1e7e34;
+        }
     </style>
 </head>
 
@@ -86,7 +86,7 @@
             <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12">
 
                 <h1 class="text-center mt-2 ">Contact Us</h1>
-                <h6 class="text-center m-3 " > Please fill this form, We are here to resolve your
+                <h6 class="text-center m-3 "> Please fill this form, We are here to resolve your
                     queries</h6>
 
                 <form class="needs-validation m-4" novalidate>
@@ -137,6 +137,20 @@
                             </div>
                         </div>
                     </div>
+
+
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label for="validationCustom06">Message</label>
+                            <input type="text" class="form-control" value="" id="message" required>
+                            <div class="invalid-feedback">
+                                Please provide your queries
+                            </div>
+                        </div>
+                    </div>
+
+
+
                     <div class="form-group">
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
@@ -153,7 +167,7 @@
                     <button type="submit" onclick="javascript:window.location.reload()"
                         class="btn btn-outline-primary">Reset</button>
                 </form>
-                
+
                 <div id="result" style="display:none;" class="justify-content-center">
                     <h2 class="text-center">Submitted Details</h2>
                     <p id="fnamepara">First Name : </p>
@@ -161,6 +175,7 @@
                     <p id="emailpara">Email : </p>
                     <p id="citypara">City : </p>
                     <p id="zippara">Contact Number : </p>
+                    <p id="messagepara">Message : </p>
                     <h6 id="welcomenote"></h6>
                 </div>
                 <script>
@@ -189,30 +204,34 @@
 
                         if (document.getElementById("invalidCheck").checked) {
 
-                                document.getElementById("result").style.display="block";
+                            document.getElementById("result").style.display = "block";
                             let fname = document.getElementById("firstname").value;
                             let lname = document.getElementById("lastname").value;
                             let email = document.getElementById("email").value;
                             let city = document.getElementById("city").value;
                             let zip = document.getElementById("zip").value;
-                            
-                           let a=  document.getElementById("fnamepara").innerHTML;
-                           document.getElementById("fnamepara").innerHTML=a + fname;
+                            let message = document.getElementById("message").value;
 
-                           let b=  document.getElementById("lastpara").innerHTML;
-                           document.getElementById("lastpara").innerHTML=b + lname;
+                            let a = document.getElementById("fnamepara").innerHTML;
+                            document.getElementById("fnamepara").innerHTML = a + fname;
 
-                           let c=  document.getElementById("emailpara").innerHTML;
-                           document.getElementById("emailpara").innerHTML=c + email;
+                            let b = document.getElementById("lastpara").innerHTML;
+                            document.getElementById("lastpara").innerHTML = b + lname;
 
-                           let d=  document.getElementById("citypara").innerHTML;
-                           document.getElementById("citypara").innerHTML=d + city;
+                            let c = document.getElementById("emailpara").innerHTML;
+                            document.getElementById("emailpara").innerHTML = c + email;
 
-                           let e=  document.getElementById("zippara").innerHTML;
-                           document.getElementById("zippara").innerHTML=e + zip;
+                            let d = document.getElementById("citypara").innerHTML;
+                            document.getElementById("citypara").innerHTML = d + city;
 
-                           document.getElementById("welcomenote").innerHTML="Thanks! We will get you shortly..."
-                            
+                            let e = document.getElementById("zippara").innerHTML;
+                            document.getElementById("zippara").innerHTML = e + zip;
+
+                            let f = document.getElementById("messagepara").innerHTML;
+                            document.getElementById("messagepara").innerHTML = f + message;
+
+                            document.getElementById("welcomenote").innerHTML = "Thanks! We will get you shortly..."
+
                         }
                     }
 
@@ -221,11 +240,6 @@
             </div>
         </div>
     </div>
-    <script>
-
-
-
-    </script>
 </body>
 
 </html>
