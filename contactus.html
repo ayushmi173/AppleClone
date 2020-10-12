@@ -164,7 +164,7 @@
                             </div>
                         </div>
                     </div>
-                    <button class="btn btn-outline-primary" type="button" onclick="formClick()">Submit </button>
+                    <button class="btn btn-outline-primary" type="button" id="submitbtn" onclick="formClick()">Submit </button>
                     <button type="submit" onclick="javascript:window.location.reload()"
                         class="btn btn-outline-primary">Reset</button>
                 </form>
@@ -203,7 +203,7 @@
                 <script>
                     function formClick() {
 
-
+                            document.getElementById("submitbtn").disabled = true;
                         if (document.getElementById("invalidCheck").checked) {
 
                             document.getElementById("result").style.display = "block";
