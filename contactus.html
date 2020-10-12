@@ -202,9 +202,9 @@
                 <script>
                     function formClick() {
 
-                            document.getElementById("submitbtn").disabled = true;
+                            
                         if (document.getElementById("invalidCheck").checked) {
-
+                                document.getElementById("submitbtn").disabled = true;
                             document.getElementById("result").style.display = "block";
                             let fname = document.getElementById("firstname").value;
                             let lname = document.getElementById("lastname").value;
